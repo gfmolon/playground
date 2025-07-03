@@ -2,7 +2,6 @@
 
 int main() {
 
-
     int v[5];
     int i, j, aux;
 
@@ -25,10 +24,5 @@ int main() {
         printf("%d\n",v[i]);
     }
 
-
-
-
-
     return 0;
-
 }
