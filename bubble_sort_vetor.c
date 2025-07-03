@@ -1,30 +1,33 @@
-// Elementos em ordem crescente usando bubble sort.
-
 #include <stdio.h>
 
-int main() {
+int main () {
 
-    int v[5];
     int i, j, aux;
+    int v[10];
 
-    for(i=0; i<5; i++) {
-        printf("Numero\n");
+    printf("Coleta de dados:\n");
+    for(i=0; i<10; i++) {
+        printf("Informe o valor\n");
         scanf("%d",&v[i]);
     }
 
-    for(i=0; i<5; i++) {
-        for(j=0; j<4-i; j++) {
-            if( v[j] > v[j+1]) {
-                aux = v[j+1];
-                v[j+1] = v[j];
-                v[j] = aux;
+    printf("Processamento:\n");
+    for(i=0; i<10; i++) {
+        for(j=0; j < 9-i; j++) {
+            if(v[j] > v[j+1]) {
+                aux = v[j];
+                v[j] = v[j+1];
+                v[j+1] = aux;
             }
+            
         }
     }
 
-    for(i=0; i<5; i++) {
+    printf("Ordem Crescente:\n");
+    for(i=0; i<10; i++) {
         printf("%d\n",v[i]);
     }
 
     return 0;
+
 }
