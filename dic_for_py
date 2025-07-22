@@ -1,0 +1,8 @@
+lista = [
+        {"aluno":"Laver", "nota":8},
+        {"aluno":"Joao", "nota":10},
+        {"aluno":"Jedi", "nota":5}
+        ]
+
+for x in lista:
+    print(f"Aluno: {x['aluno']} | Nota: {x['nota']}")
