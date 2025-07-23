@@ -12,7 +12,7 @@ int main() {
     if(n2 > maior) {
         maior = n2;
     } 
-    else if (n3 > maior) {
+    if (n3 > maior) { 
         maior = n3;
     }
 
