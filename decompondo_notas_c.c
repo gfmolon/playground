@@ -35,4 +35,5 @@ int main() {
     printf("Dez: %d\n",dez);
     printf("Cinco: %d\n", cinco);
     printf("Dois: %d\n", dois);
+    printf("Um: %d\n", um);
 }
