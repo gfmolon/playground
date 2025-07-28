@@ -23,11 +23,11 @@ if len(dados_api) > 0:
 
     maior = dados_api[0]["id"]
     aux = dados_api[0]
-    for n in range(len(dados_api) - 1):
+    for n in range(0,len(dados_api) - 1):
         dados_api[n] = dados_api[n + 1]
         print(f"{n} -> id: {dados_api[n]['id']} | título: {dados_api[n]['title']}")
         if dados_api[n]["id"] > maior:
             maior = dados_api[n]["id"]
     dados_api[-1] = aux  # Coloca o primeiro no final
-        
+    print(f"{len(dados_api)-1} -> id: {dados_api[-1]['id']} | título: {dados_api[-1]['title']}")
 print(f"\nMaior elemento ID: {maior}")
