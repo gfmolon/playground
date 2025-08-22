@@ -1,16 +1,11 @@
-#Binário
-numero = int(input("Informe o número decimal:"))
+n = int(input("informe o numero decimal"))
 
-d6 = numero % 10
-d5 = (numero // 10) % 10
-d4 = (numero // 100) % 10
-d3 = (numero // 1000) % 10
-d2 = (numero // 10000) % 10
-d1 = (numero // 100000) % 10
-
-numero_decimal = d6*1 + d5*2 + d4*4 + d3*8 + d2*16 + d1* 32
-
-print(f"Número binário: {numero}")
-print(f"Número decimal: {numero_decimal}")
+d6 = n % 2;
+d5 = (n // 2) % 2 
+d4 = (n // 4) % 2
+d3 = (n // 8) % 2
+d2 = (n // 16) % 2
+d1 = (n // 32) % 2
 
 
+print(f"{d1} {d2} {d3} {d4} {d5} {d6}")
