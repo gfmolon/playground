@@ -47,6 +47,8 @@ int main() {
                     printf("Média: %.2f\n", mh2);
                     if (mh2 >= 6) {
                         printf("Aprovado. Yuhull..\n");
+                    } else {
+                        printf("Reprovado.\n");
                     }
                 }
 
@@ -68,6 +70,9 @@ int main() {
                     if (mh2 >= 6) {
                         printf("Aprovado. Yuhull..\n");
                     }
+                     else {
+                        printf("Reprovado.\n");
+                     }
                 }
 
             }
@@ -87,6 +92,8 @@ int main() {
                     printf("Média: %.2f\n", mh2);
                     if (mh2 >= 6) {
                         printf("Aprovado. Yuhull..\n");
+                    } else {
+                        printf("Reprovado.]\n");
                     }
                 }
 
