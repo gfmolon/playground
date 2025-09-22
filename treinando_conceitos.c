@@ -62,6 +62,18 @@ int main() {
 
     }
 
+    if (k > 1) {
+        // movendo uma casa a esquerda
+        aux = dados[0];
+        for(i=0; i<k-1; i++) {
+            dados[i] = dados[i+1];
+        }
+        dados[k-1] = aux;
+
+        for(i=0; i<k; i++) {
+            printf("%d\n", dados[i]);
+        }
+    }
 
     return 0;
 }
